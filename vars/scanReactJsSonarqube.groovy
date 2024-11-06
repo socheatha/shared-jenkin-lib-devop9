@@ -12,6 +12,7 @@ def call(String projectName, String projectKey , String projectVersion){
                     -Dsonar.projectKey=${projectKey} \
                     -Dsonar.projectName="${projectName}" \
                     -Dsonar.projectVersion=${projectVersion} \
+                    -Dsonar.exclusions="pipes/**"
                      """   
                         
                         }
